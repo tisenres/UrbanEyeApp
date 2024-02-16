@@ -62,7 +62,7 @@
                 android:textSize="20sp"
                 android:hint="Check"
                 android:fontFamily="@font/product_sans_bold"
-                android:textColor="@color/black"
+                android:textColor="#FFFFFF"
                 style="@style/Widget.Material3.Button"
                 android:backgroundTint="#FF9800"
                 />

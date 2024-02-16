@@ -14,7 +14,13 @@ sealed class PropertyType(
         picRes = R.drawable.fireimage
     )
     
-    object Fog: PropertyType(
+    object Smoke: PropertyType(
+        name = "Fog",
+        description = "Fog fog",
+        picRes = R.drawable.fog
+    )
+    
+    object Violence: PropertyType(
         name = "Fog",
         description = "Fog fog",
         picRes = R.drawable.fog
@@ -24,7 +30,8 @@ sealed class PropertyType(
         fun from(code: Int): PropertyType {
             return when(code) {
                 0 -> Fire
-                1 -> Fog
+                1 -> Smoke
+                2 -> Violence
                 else -> Fire
             }
         }
