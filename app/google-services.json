@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "309609682877",
+    "project_id": "urbaneye-cde81",
+    "storage_bucket": "urbaneye-cde81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309609682877:android:6b79fa94364de85f0664d4",
+        "android_client_info": {
+          "package_name": "com.tisenres.urbaneyeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbNoJjs7WpNwHT4BTRoLuL6-D9M-0MLOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
