@@ -27,7 +27,7 @@
             <ImageView
                 android:id="@+id/propertyImage"
                 android:layout_width="match_parent"
-                android:layout_height="194dp"
+                android:layout_height="150dp"
                 android:scaleType="centerCrop"
                 />
 
@@ -39,7 +39,7 @@
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/product_sans_bold"
                 android:textAppearance="?attr/textAppearanceTitleMedium"
-                android:textSize="23sp"
+                android:textSize="20sp"
                 tools:text="Property name" />
 
             <TextView
@@ -48,23 +48,34 @@
                 android:layout_height="wrap_content"
                 tools:text="Property description"
                 android:fontFamily="@font/product_sans_regular"
-                android:textSize="18sp"
+                android:textSize="15sp"
                 android:layout_margin="20dp"
                 android:textAppearance="?attr/textAppearanceTitleMedium"
                 />
 
-            <com.google.android.material.button.MaterialButton
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/button"-->
+<!--                android:layout_width="110dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginStart="15dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:textSize="18sp"-->
+<!--                android:hint="Check"-->
+<!--                android:fontFamily="@font/product_sans_bold"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:backgroundTint="#153574"-->
+<!--                />-->
+
+            <Button
                 android:id="@+id/button"
                 android:layout_width="110dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginBottom="10dp"
-                android:textSize="20sp"
-                android:hint="Check"
+                android:textSize="18sp"
+                android:text="Check"
                 android:fontFamily="@font/product_sans_bold"
-                android:textColor="#FFFFFF"
-                style="@style/Widget.Material3.Button"
-                android:backgroundTint="#FF9800"
+                android:backgroundTint="#153574"
                 />
 
         </LinearLayout>

@@ -10,20 +10,20 @@ sealed class PropertyType(
 ) {
     object Fire: PropertyType(
         name = "Fire recognition",
-        description = "Fire fire",
-        picRes = R.drawable.fireimage
+        description = "Fire description",
+        picRes = R.drawable.fire
     )
     
     object Smoke: PropertyType(
-        name = "Fog",
-        description = "Fog fog",
-        picRes = R.drawable.fog
+        name = "Smoke",
+        description = "Smoke description",
+        picRes = R.drawable.smoke
     )
     
     object Violence: PropertyType(
-        name = "Fog",
-        description = "Fog fog",
-        picRes = R.drawable.fog
+        name = "Violence",
+        description = "Fog description",
+        picRes = R.drawable.violence
     )
     
     companion object {

@@ -29,6 +29,8 @@ class InfoFragment : Fragment(), IInfoView {
     
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        
+        // TODO Test Video, replace with real video from Firestore
         val videoPath = "android.resource://${requireActivity().packageName}/${R.raw.fire_video}"
         binding.videoView.setVideoURI(Uri.parse(videoPath))
         binding.videoView.start()
