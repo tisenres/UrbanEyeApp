@@ -8,10 +8,12 @@ import com.tisenres.urbaneyeapp.databinding.PropertyItemBinding
 
 const val NUMBER_OF_SECTIONS = 4
 
-class PropertiesAdapter: RecyclerView.Adapter<PropertiesAdapter.PropertyViewHolder>() {
+class PropertiesAdapter(private val presenter: IPropertiesPresenter) :
+    RecyclerView.Adapter<PropertiesAdapter.PropertyViewHolder>() {
     
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PropertyViewHolder {
-        val binding = PropertyItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding =
+            PropertyItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return PropertyViewHolder(binding)
     }
     
@@ -21,8 +23,29 @@ class PropertiesAdapter: RecyclerView.Adapter<PropertiesAdapter.PropertyViewHold
         holder.bind(position)
     }
     
-    class PropertyViewHolder(private val binding: PropertyItemBinding): RecyclerView.ViewHolder(binding.root) {
-
+    inner class PropertyViewHolder(private val binding: PropertyItemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+        
+        init {
+            initSetOnClickListeners()
+        }
+        
+        private fun initSetOnClickListeners() {
+            binding.button.setOnClickListener {
+                val pos = adapterPosition
+                if (pos != RecyclerView.NO_POSITION) {
+                    presenter.onButtonPressed(pos)
+                }
+            }
+            
+            binding.card.setOnClickListener {
+                val pos = adapterPosition
+                if (pos != RecyclerView.NO_POSITION) {
+                    presenter.onButtonPressed(pos)
+                }
+            }
+        }
+        
         fun bind(position: Int) {
             val propertyType = PropertyType.from(position)
             binding.propertyName.text = propertyType.name

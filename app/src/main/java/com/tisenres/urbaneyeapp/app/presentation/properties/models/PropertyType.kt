@@ -14,10 +14,17 @@ sealed class PropertyType(
         picRes = R.drawable.fireimage
     )
     
+    object Fog: PropertyType(
+        name = "Fog",
+        description = "Fog fog",
+        picRes = R.drawable.fog
+    )
+    
     companion object {
         fun from(code: Int): PropertyType {
             return when(code) {
                 0 -> Fire
+                1 -> Fog
                 else -> Fire
             }
         }
