@@ -6,6 +6,7 @@ import androidx.fragment.app.commit
 import androidx.fragment.app.replace
 import com.tisenres.urbaneyeapp.app.presentation.info.InfoFragment
 import com.tisenres.urbaneyeapp.app.presentation.properties.PropertiesFragment
+import com.tisenres.urbaneyeapp.data.WebSocketClient
 import com.tisenres.urbaneyeapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         
         navigateToPropertiesFragment()
+        val webSocketClient = WebSocketClient()
+        webSocketClient.connectWebSocket()
     }
     
     private fun navigateToPropertiesFragment() {

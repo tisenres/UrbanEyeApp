@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.tisenres.urbaneyeapp.app.presentation.properties.models.PropertyType
+import com.tisenres.urbaneyeapp.databinding.CameraItemBinding
 import com.tisenres.urbaneyeapp.databinding.PropertyItemBinding
 
 const val NUMBER_OF_SECTIONS = 5

@@ -71,4 +71,7 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
     
     implementation ("com.google.firebase:firebase-messaging:22.0.0")
+    
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    
 }

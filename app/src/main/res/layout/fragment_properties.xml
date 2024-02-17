@@ -10,14 +10,14 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cameras"
+        android:fontFamily="@font/inter_bold"
         android:padding="18dp"
-        android:fontFamily="@font/product_sans_bold"
-        android:textSize="28sp"
+        android:text="@string/cameras"
         android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/propertiesRv"
@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:listitem="@layout/property_item" />
+        tools:listitem="@layout/camera_item" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
