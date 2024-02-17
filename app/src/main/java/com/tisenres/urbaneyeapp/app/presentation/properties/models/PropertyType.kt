@@ -11,7 +11,7 @@ sealed class PropertyType(
     object Property0: PropertyType(
         name = "Home 2nd floor",
         description = "Fire description",
-        picRes = R.drawable.home
+        picRes = R.drawable.house2
     )
 
     object Property1: PropertyType(
@@ -23,7 +23,7 @@ sealed class PropertyType(
     object Property2: PropertyType(
         name = "Qiyot, 61",
         description = "Smoke description",
-        picRes = R.drawable.azimov
+        picRes = R.drawable.qiout
     )
 
     object Property3: PropertyType(
@@ -33,9 +33,9 @@ sealed class PropertyType(
     )
     
     object Property4: PropertyType(
-        name = "Home Kitchen",
+        name = "Parents' house",
         description = "Fog description",
-        picRes = R.drawable.azimov
+        picRes = R.drawable.uzbek
     )
     
     companion object {
