@@ -44,7 +44,7 @@ class InfoFragment : Fragment(), IInfoView, OnMapReadyCallback {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         
-        val videoPath = "android.resource://${requireActivity().packageName}/${R.raw.fire_video}"
+        val videoPath = "android.resource://${requireActivity().packageName}/${R.raw.fire2}"
         binding.videoView.setVideoURI(Uri.parse(videoPath))
         binding.videoView.start()
         
@@ -67,7 +67,7 @@ class InfoFragment : Fragment(), IInfoView, OnMapReadyCallback {
         }
         binding.mapView.onPause()
     }
-    
+
     override fun onResume() {
         super.onResume()
         if (!binding.videoView.isPlaying) {
@@ -102,8 +102,7 @@ class InfoFragment : Fragment(), IInfoView, OnMapReadyCallback {
                 Manifest.permission.CALL_PHONE
             ) != PackageManager.PERMISSION_GRANTED
         ) {
-            ActivityCompat.requestPermissions(
-                requireContext() as Activity,
+            requestPermissions(
                 arrayOf(Manifest.permission.CALL_PHONE),
                 REQUEST_CALL_PHONE
             )
@@ -114,18 +113,23 @@ class InfoFragment : Fragment(), IInfoView, OnMapReadyCallback {
         }
     }
     
-//    override fun onRequestPermissionsResult(
-//        requestCode: Int,
-//        permissions: Array<String>,
-//        grantResults: IntArray
-//    ) {
-//        if (requestCode == REQUEST_CALL_PHONE) {
-//            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-//                callEmergency()
-//            } else {
-//                Toast.makeText(requireContext(), "Permission denied", Toast.LENGTH_SHORT).show()
-//            }
-//        }
-//    }
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        when (requestCode) {
+            REQUEST_CALL_PHONE -> {
+                if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    // Permission granted, call emergency
+                    callEmergency()
+                } else {
+                    // Permission denied, handle accordingly
+                    Toast.makeText(requireContext(), "Permission denied", Toast.LENGTH_SHORT).show()
+                }
+            }
+            else -> super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        }
+    }
     
 }

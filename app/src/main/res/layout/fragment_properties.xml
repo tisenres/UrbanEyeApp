@@ -8,10 +8,11 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/inter_bold"
-        android:padding="18dp"
+        android:gravity="center"
+        android:fontFamily="@font/inter_medium"
+        android:padding="12dp"
         android:text="@string/cameras"
         android:textColor="@color/black"
         android:textSize="28sp"

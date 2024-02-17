@@ -56,7 +56,7 @@
                     android:layout_gravity="start"
                     android:layout_weight="1"
                     android:textColor="#4F7396"
-                    android:fontFamily="@font/product_sans_regular"
+                    android:fontFamily="@font/inter_medium"
                     android:textAppearance="?attr/textAppearanceTitleMedium"
                     android:textSize="15sp"
                     tools:text="Property description" />
