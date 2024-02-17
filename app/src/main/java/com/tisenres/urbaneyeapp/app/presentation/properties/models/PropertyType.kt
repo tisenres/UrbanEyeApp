@@ -8,31 +8,45 @@ sealed class PropertyType(
     var description: String,
     @DrawableRes var picRes: Int
 ) {
-    object Fire: PropertyType(
-        name = "Fire recognition",
+    object Property0: PropertyType(
+        name = "Home 2nd floor",
         description = "Fire description",
-        picRes = R.drawable.fire
+        picRes = R.drawable.home
     )
-    
-    object Smoke: PropertyType(
-        name = "Smoke",
+
+    object Property1: PropertyType(
+        name = "Garage",
         description = "Smoke description",
-        picRes = R.drawable.smoke
+        picRes = R.drawable.garage
     )
     
-    object Violence: PropertyType(
-        name = "Violence",
+    object Property2: PropertyType(
+        name = "Qiyot, 61",
+        description = "Smoke description",
+        picRes = R.drawable.azimov
+    )
+
+    object Property3: PropertyType(
+        name = "Azimov street, 37",
         description = "Fog description",
-        picRes = R.drawable.violence
+        picRes = R.drawable.azimov
+    )
+    
+    object Property4: PropertyType(
+        name = "Home Kitchen",
+        description = "Fog description",
+        picRes = R.drawable.azimov
     )
     
     companion object {
         fun from(code: Int): PropertyType {
             return when(code) {
-                0 -> Fire
-                1 -> Smoke
-                2 -> Violence
-                else -> Fire
+                0 -> Property0
+                1 -> Property1
+                2 -> Property2
+                3 -> Property3
+                4 -> Property4
+                else -> Property0
             }
         }
     }

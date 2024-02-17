@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.tisenres.urbaneyeapp.app.presentation.properties.models.PropertyType
 import com.tisenres.urbaneyeapp.databinding.PropertyItemBinding
 
-const val NUMBER_OF_SECTIONS = 3
+const val NUMBER_OF_SECTIONS = 5
 
 class PropertiesAdapter(private val presenter: IPropertiesPresenter) :
     RecyclerView.Adapter<PropertiesAdapter.PropertyViewHolder>() {

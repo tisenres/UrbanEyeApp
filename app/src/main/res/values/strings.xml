@@ -2,5 +2,5 @@
     <string name="app_name">UrbanEyeApp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">HEHEHEHEHt</string>
-    <string name="properties">Properties</string>
+    <string name="cameras">Video cameras</string>
 </resources>
