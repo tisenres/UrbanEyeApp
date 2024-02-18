@@ -16,25 +16,25 @@ sealed class PropertyType(
 
     object Property1: PropertyType(
         name = "Garage",
-        description = "11:02PM",
+        description = "11:04PM",
         picRes = R.drawable.garage
     )
     
     object Property2: PropertyType(
         name = "Qiyot, 61",
-        description = "9:57PM",
+        description = "11:04PM",
         picRes = R.drawable.qiout
     )
 
     object Property3: PropertyType(
         name = "Azimov street, 37",
-        description = "9:43PM",
+        description = "11:03PM",
         picRes = R.drawable.azimov
     )
     
     object Property4: PropertyType(
         name = "Parents' house",
-        description = "8:17PM",
+        description = "11:02PM",
         picRes = R.drawable.uzbek
     )
     
