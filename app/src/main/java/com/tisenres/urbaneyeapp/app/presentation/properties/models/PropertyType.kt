@@ -10,31 +10,31 @@ sealed class PropertyType(
 ) {
     object Property0: PropertyType(
         name = "Home 2nd floor",
-        description = "Fire description",
+        description = "11:04PM",
         picRes = R.drawable.house2
     )
 
     object Property1: PropertyType(
         name = "Garage",
-        description = "Smoke description",
+        description = "11:02PM",
         picRes = R.drawable.garage
     )
     
     object Property2: PropertyType(
         name = "Qiyot, 61",
-        description = "Smoke description",
+        description = "9:57PM",
         picRes = R.drawable.qiout
     )
 
     object Property3: PropertyType(
         name = "Azimov street, 37",
-        description = "Fog description",
+        description = "9:43PM",
         picRes = R.drawable.azimov
     )
     
     object Property4: PropertyType(
         name = "Parents' house",
-        description = "Fog description",
+        description = "8:17PM",
         picRes = R.drawable.uzbek
     )
     
